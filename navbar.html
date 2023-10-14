@@ -52,6 +52,7 @@
                     </li>
                 </ul>
             </nav>
+            <button id="btn-checar-emails" class="btn btn-warning" type="button">Checar caixa de entrada</button>
             </div>
         </div>
     </header>
@@ -67,7 +68,7 @@
                     <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda Masculina</button>
                     <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda Feminina</button>
                 </nav>
-                <button id="btn-checar-emails" class="btn btn-warning" type="button">Checar caixa de entrada</button>
+                
                 <div class="tab-content">
                     <div class="tab-pane active" id="aba1">
                         Conteúdo da aba Eletrônicos
@@ -109,15 +110,18 @@
 
     <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
     <script>
-        const ativadorToast = document.getElementById('btn-checar-email')
+        const ativadorToast = document.getElementById('btn-checar-emails')
         const mensagem = document.getElementById('mensagem-alerta')
         
         if (ativadorToast) {
             ativadorToast.addEventListener('click', function () {
-                const toast = new bootstrap.Toast(mensagem)
+                const toast = new bootstrap.Toast(mensagem);
                 toast.show();
             })
         }
+    </script>
+</body>
+</html
     </script>
 </body>
 </html>
