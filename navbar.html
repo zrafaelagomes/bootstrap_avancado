@@ -26,6 +26,12 @@
             left: 0;
             background-color: #fff;
         }
+
+        .toast-container {
+            max-width: 350px;
+            z-index: 1050;
+        }
+
     </style>
 </head>
 <body>
@@ -91,7 +97,7 @@
     </div>
 
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div class="toast" id="mensagens-alerta">
+        <div class="toast" id="mensagem-alerta">
             <header class="toast-header">
                 <strong>Importante</strong>
             </header>
@@ -113,15 +119,16 @@
         const ativadorToast = document.getElementById('btn-checar-emails')
         const mensagem = document.getElementById('mensagem-alerta')
         
-        if (ativadorToast) {
+        if (ativadorToast && mensagem) {
+
             ativadorToast.addEventListener('click', function () {
                 const toast = new bootstrap.Toast(mensagem);
                 toast.show();
+                    
             })
         }
     </script>
 </body>
-</html
-    </script>
+</html>
 </body>
 </html>
